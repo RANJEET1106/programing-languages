@@ -27,5 +27,53 @@ int main()
 
 //MODIFIERS
 
+    /*
+    More Modifiers similar to vector and deque
+    assign
+    emplace_back
+    push_front
+    pop_front
+    emplace_back
+    push_back
+    pop_back
+    emplace
+    insert
+    erase
+    swap
+    resize
+    clear
+    */
+
+//OPERATIONS
+
+    //splice operator:Transferelements from one list to another
+    /*
+    list1_name.splice (iterator position, list2)
+                    or 
+    list1_name.splice (iterator position, list2, iterator i)
+                    or 
+    list1_name.splice (iterator position, list2, iterator first, iterator last)
+    */
+
+    list<int> l1={1,2,3,4,5};
+    list<int> l2={6,7,8};
     
+    for(int i:l1) cout<<i<<" ";
+    cout<<endl;
+    for(int i:l2) cout<<i<<" ";
+    cout<<endl;
+    
+    list<int>::iterator it;
+    it=l1.begin();
+    advance(it,2);
+    l2.splice(l2.begin(),l1,it,l1.end());
+    for(int i:l2) cout<<i<<" ";
+    cout<<endl;    
+    //remove_if():removes an element fulfiling the condition
+    l.unique();//removes all duplicate elemets
+    l1.merge(l2);//merge two sorted list
+    for(int i:l1) cout<<i<<" ";
+    cout<<endl;
+
+    //sort and revferse function similar to vector  
 }
