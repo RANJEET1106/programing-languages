@@ -87,6 +87,7 @@ int main()
     v.insert(v.begin()+2,6);//insert element before specified position
     cout<<"Insert element 6 at index 2"<<endl;
     for(int i:v) cout<<i<<" ";cout<<endl;
+    
     v.erase(v.begin()+2);//erase element at index 2
     //we can also erase elements in certain range by v.erase(v.begin(),v.begin()+2)
     cout<<"Delete element at index 2"<<endl;
