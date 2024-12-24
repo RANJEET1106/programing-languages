@@ -7,12 +7,14 @@ program variables
     double precision :: dbl_num=1.11d+0 ! Double provides 16 digit pricision  at the end d+0 is important
     integer :: i_num1=0,i_num2=0
     logical :: can_vote=.true.
+    integer(kind=16)::i_num3 ! Yo can change number of bytes according to your preference
     character (len=10) :: month="June"
     complex :: com_num=(2.0,4.0)
     print *,"Biggest Real",huge(r_num1)
     print *,"Biggest Int", huge(i_num1)
     print *,"Smallest Real",tiny(r_num1)
     ! print *,"Smallest Int",tiny(i_num1) Tiny don't Wrok on integer
+    print *,"Biggest Int with Updated Kind",huge(i_num3)
 
     print *,"Bytes required to sore datatypes"
     
@@ -31,5 +33,6 @@ program variables
     ! i2 gves 2 space to integer
     ! space starts to fill up from back
     ! it is used for formatting output
+
 
 end program variables
