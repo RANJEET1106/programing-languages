@@ -31,10 +31,10 @@ fun main(){
 
 
     // lable
-    loop@ for(i in 1..10){ // loop is just a lable we can replace with anything
+    loop@ for(k in 1..10){ // loop is just a lable we can replace with anything
         for(j in 1..3){
-            if(i%3==0) break@loop; // break outside both loops
-            println("$i $j");
+            if(k%3==0) break@loop; // break outside both loops
+            println("$k $j");
         }
     }
 
